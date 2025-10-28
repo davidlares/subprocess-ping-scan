@@ -1,4 +1,4 @@
-## PingScan
+## Subprocess Ping Scan
 
 This script performs a `ping` command to every single network host on an IP range. This uses the `subprocess`
 Python module that presents as an OS API for Python. The whole idea is to evaluate if it can be accessible from "the attacker" perspective
@@ -11,7 +11,7 @@ The `ping` command uses the `ICMP protocol`, which basically is a message protoc
 
 ## WorkFlow
 
-Basically, the subprocess module sets up like an interface (`Popen class`) to the terminal, this does the `ping` command and waits for the response. Any program product is handled by `pipes` for errors, input, and output.
+Basically, the subprocess module sets up like an interface (`Popen class`) to the terminal, which does the `ping` command and waits for the response. Any program product is handled by `pipes` for errors, input, and output.
 
 ## Usage
 
